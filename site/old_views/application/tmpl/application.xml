@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metadata>
+	<layout title="RECRUITMENT_LAYOUT_APPLICATION">
+	<message>
+		<![CDATA[RECRUITMENT_LAYOUT_SHOW_APPLICATION_LAYOUT]]>
+	</message></layout>
+
+	<fields name="request">
+
+		<fieldset name="request" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+			<field name="cid"
+					type="modal_application"
+					label="RECRUITMENT_JSEARCH_SELECT_APPLICATION"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_APPLICATION"/>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+
+	<name>com_recruitment</name>
+	<author>Albert Moreno</author>
+	<creationDate>Dec 2022</creationDate>
+	<copyright>Copyright (C) Albert Moren</copyright>
+	<license>https://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+	<authorEmail>info@asdf.com</authorEmail>
+	<authorUrl>https://asdf.com</authorUrl>
+	<version>4.0.0</version>
+	<description>Community component for recruitment</description>
+
+	<namespace path="src">Joomla\Component\Recruitment</namespace>
+
+	<scriptfile>file.script.php</scriptfile>
+
+	<files folder="site">
+		<folder>_fork</folder>
+		<folder>controllers</folder>
+		<folder>files</folder>
+		<folder>images</folder>
+		<folder>layouts</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+
+		<folder>src</folder>
+		<folder>forms</folder>
+		<folder>helpers</folder>
+		<folder>tmpl</folder>
+
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>recruitment.php</filename>
+		<filename>router.php</filename>
+	</files>
+
+	<media destination="recruitment" folder="media">
+		<folder>assets</folder>
+		<folder>libraries</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<administration>
+		
+		<menu img="class:address-book">RECRUITMENT_MENU_RECRUITMENT</menu>
+
+		<submenu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_wheredidus.png" link="option=com_recruitment&amp;view=wheredidus">RECRUITMENT_MENU_WHEREDIDUS</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_doctypes.png" link="option=com_recruitment&amp;view=doctypes">RECRUITMENT_MENU_DOC_TYPES</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_genders.png" link="option=com_recruitment&amp;view=genders">RECRUITMENT_MENU_GENDERS</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_overallranges.png" link="option=com_recruitment&amp;view=overallranges">RECRUITMENT_MENU_OVERALL_RANGES</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_programmes.png" link="option=com_recruitment&amp;view=programmes">RECRUITMENT_MENU_PROGRAMS</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_tabs.png" link="option=com_recruitment&amp;view=tabs">RECRUITMENT_MENU_TABS</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_jobstatus.png" link="option=com_recruitment&amp;view=jobstatus">RECRUITMENT_MENU_JOB_STATUS</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_tabsjobs.png" link="option=com_recruitment&amp;view=tabsjobs">RECRUITMENT_MENU_TABS_JOB</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_status.png" link="option=com_recruitment&amp;view=status">RECRUITMENT_MENU_STATUS</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_jobs.png" link="option=com_recruitment&amp;view=jobs">RECRUITMENT_MENU_JOBS</menu>
+			<menu img="components/com_recruitment/images/icon-16-recruitment_applications.png" link="option=com_recruitment&amp;view=applications">RECRUITMENT_MENU_APPLICATIONS</menu>
+		</submenu>
+
+
+		<files folder="admin">
+			<folder>_fork</folder>
+			<folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>images</folder>
+			<folder>layouts</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>recruitment.php</filename>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_recruitment.ini</language>
+			<language tag="en-GB">language/en-GB.com_recruitment.sys.ini</language>
+		</languages>
+
+
+	</administration>
+
+
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB.com_recruitment.ini</language>
+	</languages>
+
+	<install>
+
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<update>
+
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<uninstall>
+
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+
+</extension>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<form>
+
+	<fieldset name="tabjob.form" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="tab_id"
+				alias="_tab_id_description"
+				label="RECRUITMENT_FIELD_TAB_ID_DESCRIPTION"
+				filter="INT"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				nullLabel="RECRUITMENT_JSEARCH_SELECT_TAB_ID_DESCRIPTION"/>
+
+		<field name="job_id"
+				alias="_job_id_short_description"
+				label="RECRUITMENT_FIELD_JOB_ID_SHORT_DESCRIPTION"
+				filter="INT"
+				listKey="id"
+				labelKey="short_description"
+				type="ckcombo"
+				nullLabel="RECRUITMENT_JSEARCH_SELECT_JOB_ID_SHORT_DESCRIPTION"/>
+	</fieldset>
+
+	<fieldset name="default.filters" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="filter_tab_id"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				submit="true"
+				nullLabel="RECRUITMENT_FILTER_NULL_TAB_ID_DESCRIPTION"
+				class="span-2 element-filter"
+				label="RECRUITMENT_JSEARCH_TAB_ID_DESCRIPTION"
+				ui="chosen"/>
+
+		<field name="filter_job_id"
+				listKey="id"
+				labelKey="short_description"
+				type="ckcombo"
+				submit="true"
+				nullLabel="RECRUITMENT_FILTER_NULL_JOB_ID_SHORT_DESCRIPTION"
+				class="span-2 element-filter"
+				label="RECRUITMENT_JSEARCH_JOB_ID_SHORT_DESCRIPTION"
+				ui="chosen"/>
+
+		<field name="sortTable"
+				type="cksort"
+				responsive="hidden-phone"
+				submit="true"
+				nullLabel="JGLOBAL_SORT_BY"
+				class="span-2 element-filter"
+				label="Sort by"
+				ui="chosen"/>
+
+		<field name="directionTable"
+				type="ckdirection"
+				responsive="hidden-phone"
+				submit="true"
+				nullLabel="JFIELD_ORDERING_DESC"
+				class="span-2 element-filter"
+				label="Direction"
+				ui="chosen"/>
+
+		<field name="limit"
+				type="cklimit"
+				submit="true"
+				class="span-2 element-filter"
+				label="Limit"
+				ui="chosen"/>
+	</fieldset>
+
+	<fieldset name="modal.filters" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="limit"
+				type="cklimit"
+				submit="true"
+				class="span-2 element-filter"
+				label="Limit"
+				ui="chosen"/>
+	</fieldset>
+</form>

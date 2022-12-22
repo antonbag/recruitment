@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<form>
+
+	<fieldset name="job.form" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="short_description"
+				alias="short_description"
+				label="RECRUITMENT_FIELD_SHORT_DESCRIPTION"
+				filter="STRING"
+				type="cktext"/>
+
+		<field name="description"
+				alias="description"
+				label="RECRUITMENT_FIELD_DESCRIPTION"
+				filter="STRING"
+				type="cktextarea"/>
+
+		<field name="publish_date"
+				alias="publish_date"
+				label="RECRUITMENT_FIELD_PUBLISH_DATE"
+				filter="STRING"
+				type="ckcalendar"
+				format="Y-m-d"/>
+
+		<field name="closing_date"
+				alias="closing_date"
+				label="RECRUITMENT_FIELD_CLOSING_DATE"
+				filter="STRING"
+				type="ckcalendar"
+				format="Y-m-d"/>
+
+		<field name="status_id"
+				alias="_status_id_description"
+				label="RECRUITMENT_FIELD_STATUS_ID_DESCRIPTION"
+				filter="INT"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				nullLabel="RECRUITMENT_JSEARCH_SELECT_STATUS_ID_DESCRIPTION"/>
+	</fieldset>
+
+	<fieldset name="default.filters" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="filter_publish_date"
+				type="ckcalendar"
+				submit="true"
+				placeholder="RECRUITMENT_FILTER_NULL_PUBLISH_DATE"
+				format="Y-m-d"
+				label="RECRUITMENT_JSEARCH_PUBLISH_DATE"
+				class="element-filter"
+				ui="chosen"/>
+
+		<field name="filter_closing_date"
+				type="ckcalendar"
+				submit="true"
+				placeholder="RECRUITMENT_FILTER_NULL_CLOSING_DATE"
+				format="Y-m-d"
+				label="RECRUITMENT_JSEARCH_CLOSING_DATE"
+				class="element-filter"
+				ui="chosen"/>
+
+		<field name="filter_status_id"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				submit="true"
+				nullLabel="RECRUITMENT_FILTER_NULL_STATUS_ID_DESCRIPTION"
+				class="span-2 element-filter"
+				label="RECRUITMENT_JSEARCH_STATUS_ID_DESCRIPTION"
+				ui="chosen"/>
+
+		<field name="search_search"
+				type="cksearch"
+				placeholder="RECRUITMENT_FILTER_NULL_SHORT_DESCRIPTION"
+				label="RECRUITMENT_JSEARCH_SHORT_DESCRIPTION"
+				class="element-filter element-search search-query"
+				ui="chosen"/>
+
+		<field name="sortTable"
+				type="cksort"
+				responsive="hidden-phone"
+				submit="true"
+				nullLabel="JGLOBAL_SORT_BY"
+				class="span-2 element-filter"
+				label="Sort by"
+				ui="chosen"/>
+
+		<field name="directionTable"
+				type="ckdirection"
+				responsive="hidden-phone"
+				submit="true"
+				nullLabel="JFIELD_ORDERING_DESC"
+				class="span-2 element-filter"
+				label="Direction"
+				ui="chosen"/>
+
+		<field name="limit"
+				type="cklimit"
+				submit="true"
+				class="span-2 element-filter"
+				label="Limit"
+				ui="chosen"/>
+	</fieldset>
+
+	<fieldset name="modal.filters" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="limit"
+				type="cklimit"
+				submit="true"
+				class="span-2 element-filter"
+				label="Limit"
+				ui="chosen"/>
+	</fieldset>
+</form>

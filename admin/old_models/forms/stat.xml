@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<form>
+
+	<fieldset name="stat.form" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="description"
+				alias="description"
+				label="RECRUITMENT_FIELD_DESCRIPTION"
+				filter="STRING"
+				type="cktext"/>
+
+		<field name="email_subject"
+				alias="email_subject"
+				label="RECRUITMENT_FIELD_EMAIL_SUBJECT"
+				filter="STRING"
+				type="cktext"/>
+
+		<field name="email_body"
+				alias="email_body"
+				label="RECRUITMENT_FIELD_EMAIL_BODY"
+				filter="STRING"
+				type="cktextarea"/>
+
+		<field name="order"
+				alias="order"
+				label="RECRUITMENT_FIELD_ORDER"
+				filter="INT"
+				type="cktext"
+				validate="numeric"
+				ruleInstance="numeric_5360"
+				class="validate[custom[numeric_5360]]"/>
+	</fieldset>
+
+	<fieldset name="default.filters" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="search_search"
+				type="cksearch"
+				placeholder="RECRUITMENT_FILTER_NULL_DESCRIPTION_EMAIL_SUBJECT"
+				label="RECRUITMENT_JSEARCH_DESCRIPTION_EMAIL_SUBJECT"
+				class="element-filter element-search search-query"
+				ui="chosen"/>
+
+		<field name="sortTable"
+				type="cksort"
+				responsive="hidden-phone"
+				submit="true"
+				nullLabel="JGLOBAL_SORT_BY"
+				class="span-2 element-filter"
+				label="Sort by"
+				ui="chosen"/>
+
+		<field name="directionTable"
+				type="ckdirection"
+				responsive="hidden-phone"
+				submit="true"
+				nullLabel="JFIELD_ORDERING_DESC"
+				class="span-2 element-filter"
+				label="Direction"
+				ui="chosen"/>
+
+		<field name="limit"
+				type="cklimit"
+				submit="true"
+				class="span-2 element-filter"
+				label="Limit"
+				ui="chosen"/>
+	</fieldset>
+
+	<fieldset name="modal.filters" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="limit"
+				type="cklimit"
+				submit="true"
+				class="span-2 element-filter"
+				label="Limit"
+				ui="chosen"/>
+	</fieldset>
+</form>

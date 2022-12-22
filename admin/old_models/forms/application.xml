@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<form>
+
+	<fieldset name="application.form" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="user_id"
+				alias="_user_id_name"
+				label="RECRUITMENT_FIELD_USER_ID_NAME"
+				filter="INT"
+				listKey="id"
+				labelKey="name"
+				type="ckcombo"
+				nullLabel="RECRUITMENT_JSEARCH_SELECT_USER_ID_NAME"/>
+
+		<field name="job_id"
+				alias="_job_id_short_description"
+				label="RECRUITMENT_FIELD_JOB_ID_SHORT_DESCRIPTION"
+				filter="INT"
+				listKey="id"
+				labelKey="short_description"
+				type="ckcombo"
+				nullLabel="RECRUITMENT_JSEARCH_SELECT_JOB_ID_SHORT_DESCRIPTION"/>
+
+		<field name="firstname"
+				alias="firstname"
+				label="RECRUITMENT_FIELD_FIRSTNAME"
+				filter="STRING"
+				type="cktext"/>
+
+		<field name="lastname"
+				alias="lastname"
+				label="RECRUITMENT_FIELD_LASTNAME"
+				filter="STRING"
+				type="cktext"/>
+
+		<field name="birth_date"
+				alias="birth_date"
+				label="RECRUITMENT_FIELD_BIRTH_DATE"
+				filter="STRING"
+				type="ckcalendar"
+				format="Y-m-d"/>
+
+		<field name="gender_id"
+				alias="_gender_id_description"
+				label="RECRUITMENT_FIELD_GENDER_ID_DESCRIPTION"
+				filter="INT"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				nullLabel="RECRUITMENT_JSEARCH_SELECT_GENDER_ID_DESCRIPTION"/>
+
+		<field name="birth_country_id"
+				alias="_birth_country_id_printable_name"
+				label="RECRUITMENT_FIELD_BIRTH_COUNTRY_ID_PRINTABLE_NAME"
+				filter="INT"
+				listKey="id"
+				labelKey="printable_name"
+				type="ckcombo"
+				nullLabel="RECRUITMENT_JSEARCH_SELECT_BIRTH_COUNTRY_ID_PRINTABLE_NAME"/>
+
+		<field name="passport"
+				alias="passport"
+				label="RECRUITMENT_FIELD_PASSPORT"
+				filter="STRING"
+				type="cktext"/>
+
+		<field name="email"
+				alias="email"
+				label="RECRUITMENT_FIELD_EMAIL"
+				filter="STRING"
+				type="cktext"
+				validate="ckemail"
+				class="validate[custom[ckemail]]"/>
+
+		<field name="telephone"
+				alias="telephone"
+				label="RECRUITMENT_FIELD_TELEPHONE"
+				filter="STRING"
+				type="cktext"/>
+
+		<field name="wheredidu_id"
+				alias="_wheredidu_id_description"
+				label="RECRUITMENT_FIELD_WHEREDIDU_ID_DESCRIPTION"
+				filter="INT"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				nullLabel="RECRUITMENT_JSEARCH_SELECT_WHEREDIDU_ID_DESCRIPTION"/>
+
+		<field name="recruitment_comments"
+				alias="recruitment_comments"
+				label="RECRUITMENT_FIELD_RECRUITMENT_COMMENTS"
+				filter="STRING"
+				type="cktextarea"/>
+
+		<field name="applicant_contacted_date"
+				alias="applicant_contacted_date"
+				label="RECRUITMENT_FIELD_APPLICANT_CONTACTED_DATE"
+				filter="STRING"
+				type="ckcalendar"
+				format="Y-m-d"/>
+
+		<field name="applicant_contacted"
+				alias="applicant_contacted"
+				label="RECRUITMENT_FIELD_APPLICANT_CONTACTED"
+				filter="BOOL"
+				listKey="value"
+				type="ckradio"
+				viewType="both">
+			<option value="0" icon="icomoon-cancel" color="danger">RECRUITMENT_FIELDS_BOOL_NO</option>
+			<option value="1" icon="icomoon-ok" color="success">RECRUITMENT_FIELDS_BOOL_YES</option>
+		</field>
+
+		<field name="linkedin_public_link"
+				alias="linkedin_public_link"
+				label="RECRUITMENT_FIELD_LINKEDIN_PUBLIC_LINK"
+				filter="STRING"
+				type="cktext"/>
+
+		<field name="submit_date"
+				alias="submit_date"
+				label="RECRUITMENT_FIELD_SUBMIT_DATE"
+				filter="STRING"
+				type="ckcalendar"
+				format="Y-m-d"/>
+
+		<field name="status_id"
+				alias="_status_id_description"
+				label="RECRUITMENT_FIELD_STATUS_ID_DESCRIPTION"
+				filter="INT"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				nullLabel="RECRUITMENT_JSEARCH_SELECT_STATUS_ID_DESCRIPTION"/>
+
+		<field name="modification_date"
+				alias="modification_date"
+				label="RECRUITMENT_FIELD_MODIFICATION_DATE"
+				filter="STRING"
+				type="ckcalendar"
+				format="Y-m-d H:i:s"/>
+
+		<field name="creation_date"
+				alias="creation_date"
+				label="RECRUITMENT_FIELD_CREATION_DATE"
+				filter="STRING"
+				type="ckcalendar"
+				format="Y-m-d H:i:s"/>
+	</fieldset>
+
+	<fieldset name="default.filters" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="filter_user_id"
+				listKey="id"
+				labelKey="name"
+				type="ckcombo"
+				submit="true"
+				nullLabel="RECRUITMENT_FILTER_NULL_USER_ID_NAME"
+				class="span-2 element-filter"
+				label="RECRUITMENT_JSEARCH_USER_ID_NAME"
+				ui="chosen"/>
+
+		<field name="filter_job_id"
+				listKey="id"
+				labelKey="short_description"
+				type="ckcombo"
+				submit="true"
+				nullLabel="RECRUITMENT_FILTER_NULL_JOB_ID_SHORT_DESCRIPTION"
+				class="span-2 element-filter"
+				label="RECRUITMENT_JSEARCH_JOB_ID_SHORT_DESCRIPTION"
+				ui="chosen"/>
+
+		<field name="filter_birth_date"
+				type="ckcalendar"
+				submit="true"
+				placeholder="RECRUITMENT_FILTER_NULL_BIRTH_DATE"
+				format="Y-m-d"
+				label="RECRUITMENT_JSEARCH_BIRTH_DATE"
+				class="element-filter"
+				ui="chosen"/>
+
+		<field name="filter_gender_id"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				submit="true"
+				nullLabel="RECRUITMENT_FILTER_NULL_GENDER_ID_DESCRIPTION"
+				class="span-2 element-filter"
+				label="RECRUITMENT_JSEARCH_GENDER_ID_DESCRIPTION"
+				ui="chosen"/>
+
+		<field name="filter_birth_country_id"
+				listKey="id"
+				labelKey="printable_name"
+				type="ckcombo"
+				submit="true"
+				nullLabel="RECRUITMENT_FILTER_NULL_BIRTH_COUNTRY_ID_PRINTABLE_NAME"
+				class="span-2 element-filter"
+				label="RECRUITMENT_JSEARCH_BIRTH_COUNTRY_ID_PRINTABLE_NAME"
+				ui="chosen"/>
+
+		<field name="filter_wheredidu_id"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				submit="true"
+				nullLabel="RECRUITMENT_FILTER_NULL_WHEREDIDU_ID_DESCRIPTION"
+				class="span-2 element-filter"
+				label="RECRUITMENT_JSEARCH_WHEREDIDU_ID_DESCRIPTION"
+				ui="chosen"/>
+
+		<field name="filter_applicant_contacted_date"
+				type="ckcalendar"
+				submit="true"
+				placeholder="RECRUITMENT_FILTER_NULL_APPLICANT_CONTACTED_DATE"
+				format="Y-m-d"
+				label="RECRUITMENT_JSEARCH_APPLICANT_CONTACTED_DATE"
+				class="element-filter"
+				ui="chosen"/>
+
+		<field name="filter_submit_date"
+				type="ckcalendar"
+				submit="true"
+				placeholder="RECRUITMENT_FILTER_NULL_SUBMIT_DATE"
+				format="Y-m-d"
+				label="RECRUITMENT_JSEARCH_SUBMIT_DATE"
+				class="element-filter"
+				ui="chosen"/>
+
+		<field name="filter_status_id"
+				listKey="id"
+				labelKey="description"
+				type="ckcombo"
+				submit="true"
+				nullLabel="RECRUITMENT_FILTER_NULL_STATUS_ID_DESCRIPTION"
+				class="span-2 element-filter"
+				label="RECRUITMENT_JSEARCH_STATUS_ID_DESCRIPTION"
+				ui="chosen"/>
+
+		<field name="filter_modification_date_from"
+				placeholder="RECRUITMENT_FILTER_MODIFICATION_DATE_MODIFICATION_DATE_FROM"
+				type="ckcalendar"
+				submit="true"
+				format="Y-m-d H:i:s"
+				label="RECRUITMENT_JSEARCH_MODIFICATION_DATE"
+				class="element-filter input-small"
+				ui="chosen"/>
+
+		<field name="filter_modification_date_to"
+				placeholder="RECRUITMENT_FILTER_MODIFICATION_DATE_MODIFICATION_DATE_TO"
+				type="ckcalendar"
+				submit="true"
+				format="Y-m-d H:i:s"
+				label="RECRUITMENT_JSEARCH_MODIFICATION_DATE"
+				class="element-filter input-small"
+				ui="chosen"/>
+
+		<field name="filter_creation_date_from"
+				placeholder="RECRUITMENT_FILTER_CREATION_DATE_CREATION_DATE_FROM"
+				type="ckcalendar"
+				submit="true"
+				format="Y-m-d H:i:s"
+				label="RECRUITMENT_JSEARCH_CREATION_DATE"
+				class="element-filter input-small"
+				ui="chosen"/>
+
+		<field name="filter_creation_date_to"
+				placeholder="RECRUITMENT_FILTER_CREATION_DATE_CREATION_DATE_TO"
+				type="ckcalendar"
+				submit="true"
+				format="Y-m-d H:i:s"
+				label="RECRUITMENT_JSEARCH_CREATION_DATE"
+				class="element-filter input-small"
+				ui="chosen"/>
+
+		<field name="search_search"
+				type="cksearch"
+				placeholder="RECRUITMENT_FILTER_NULL_FIRSTNAME_LASTNAME_PASSPORT_TELEPHONE_LINKEDIN_PUBLIC_LINK"
+				label="RECRUITMENT_JSEARCH_FIRSTNAME_LASTNAME_PASSPORT_TELEPHONE_LINKEDIN_PUBLIC_LINK"
+				class="element-filter element-search search-query"
+				ui="chosen"/>
+
+		<field name="sortTable"
+				type="cksort"
+				responsive="hidden-phone"
+				submit="true"
+				nullLabel="JGLOBAL_SORT_BY"
+				class="span-2 element-filter"
+				label="Sort by"
+				ui="chosen"/>
+
+		<field name="directionTable"
+				type="ckdirection"
+				responsive="hidden-phone"
+				submit="true"
+				nullLabel="JFIELD_ORDERING_DESC"
+				class="span-2 element-filter"
+				label="Direction"
+				ui="chosen"/>
+
+		<field name="limit"
+				type="cklimit"
+				submit="true"
+				class="span-2 element-filter"
+				label="Limit"
+				ui="chosen"/>
+	</fieldset>
+
+	<fieldset name="modal.filters" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+		<field name="limit"
+				type="cklimit"
+				submit="true"
+				class="span-2 element-filter"
+				label="Limit"
+				ui="chosen"/>
+	</fieldset>
+</form>

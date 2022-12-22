@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metadata>
+	<layout title="RECRUITMENT_LAYOUT_APPLICATIONS">
+	<message>
+		<![CDATA[RECRUITMENT_LAYOUT_SHOW_APPLICATIONS_LAYOUT]]>
+	</message></layout>
+
+	<fields name="request">
+
+		<fieldset name="request" addfieldpath="/administrator/components/com_recruitment/models/fields">
+
+			<field name="filter_user_id"
+					label="RECRUITMENT_JSEARCH_FILTER_USER_ID"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_USER"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_NAME"
+					type="modalPicker"
+					model="thirdusers"
+					labelKey="name"/>
+
+			<field name="filter_job_id"
+					label="RECRUITMENT_JSEARCH_FILTER_JOB_ID"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_JOB"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_SHORT_DESCRIPTION"
+					type="modalPicker"
+					model="jobs"
+					labelKey="short_description"/>
+
+			<field name="filter_birth_date"
+					label="RECRUITMENT_JSEARCH_FILTER_BIRTH_DATE"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_BIRTH_DATE"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_BIRTH_DATE"
+					format="Y-m-d"
+					type="ckcalendar"/>
+
+			<field name="filter_gender_id"
+					label="RECRUITMENT_JSEARCH_FILTER_GENDER_ID"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_GENDER"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_DESCRIPTION"
+					type="modalPicker"
+					model="genders"
+					labelKey="description"/>
+
+			<field name="filter_birth_country_id"
+					label="RECRUITMENT_JSEARCH_FILTER_BIRTH_COUNTRY_ID"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_COUNTRY"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_PRINTABLE_NAME"
+					type="modalPicker"
+					model="countries"
+					labelKey="printable_name"/>
+
+			<field name="filter_wheredidu_id"
+					label="RECRUITMENT_JSEARCH_FILTER_WHEREDIDU_ID"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_WHEREDIDU"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_DESCRIPTION"
+					type="modalPicker"
+					model="wheredidus"
+					labelKey="description"/>
+
+			<field name="filter_applicant_contacted_date"
+					label="RECRUITMENT_JSEARCH_FILTER_APPLICANT_CONTACTED_DATE"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_APPLICANT_CONTACTED_DATE"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_APPLICANT_CONTACTED_DATE"
+					format="Y-m-d"
+					type="ckcalendar"/>
+
+			<field name="filter_submit_date"
+					label="RECRUITMENT_JSEARCH_FILTER_SUBMIT_DATE"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_SUBMIT_DATE"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_SUBMIT_DATE"
+					format="Y-m-d"
+					type="ckcalendar"/>
+
+			<field name="filter_status_id"
+					label="RECRUITMENT_JSEARCH_FILTER_STATUS_ID"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_STAT"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_DESCRIPTION"
+					type="modalPicker"
+					model="status"
+					labelKey="description"/>
+
+			<field name="filter_modification_date_from"
+					label="RECRUITMENT_JSEARCH_FILTER_MODIFICATION_DATE_FROM"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_MODIFICATION_DATE_FROM"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_MODIFICATION_DATE"
+					format="Y-m-d H:i:s"
+					type="ckcalendar"/>
+
+			<field name="filter_modification_date_to"
+					label="RECRUITMENT_JSEARCH_FILTER_MODIFICATION_DATE_TO"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_MODIFICATION_DATE_TO"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_MODIFICATION_DATE"
+					format="Y-m-d H:i:s"
+					type="ckcalendar"/>
+
+			<field name="filter_creation_date_from"
+					label="RECRUITMENT_JSEARCH_FILTER_CREATION_DATE_FROM"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_CREATION_DATE_FROM"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_CREATION_DATE"
+					format="Y-m-d H:i:s"
+					type="ckcalendar"/>
+
+			<field name="filter_creation_date_to"
+					label="RECRUITMENT_JSEARCH_FILTER_CREATION_DATE_TO"
+					required="false"
+					default=""
+					description="RECRUITMENT_JSEARCH_SELECT_CREATION_DATE_TO"
+					nullLabel="RECRUITMENT_JSEARCH_SELECT_CREATION_DATE"
+					format="Y-m-d H:i:s"
+					type="ckcalendar"/>
+		</fieldset>
+	</fields>
+</metadata>
