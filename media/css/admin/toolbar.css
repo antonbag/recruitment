@@ -1,0 +1,157 @@
+/**                               ______________________________________________
+*                          o O   |                                              |
+*                 (((((  o      <    Generated with Cook Self Service  V3.1.5   |
+*                ( o o )         |______________________________________________|
+* --------oOOO-----(_)-----OOOo---------------------------------- www.j-cook.pro --- +
+* @version		
+* @package		Recruitment
+* @subpackage	Recruitment
+* @copyright	
+* @author		Albert Moreno -  - 
+* @license		
+*
+*             .oooO  Oooo.
+*             (   )  (   )
+* -------------\ (----) /----------------------------------------------------------- +
+*               \_)  (_/
+*/
+
+/**
+* Component icons 48px (Cpanel)
+**/
+.ico-48-recruitment, .icon-48-recruitment {
+	background-image:url('../images/icon-48-recruitment.png');
+}
+.ico-48-recruitment_wheredidus, .icon-48-recruitment_wheredidus {
+	background-image:url('../images/icon-48-recruitment_wheredidus.png');
+}
+.ico-48-recruitment_doctypes, .icon-48-recruitment_doctypes {
+	background-image:url('../images/icon-48-recruitment_doctypes.png');
+}
+.ico-48-recruitment_genders, .icon-48-recruitment_genders {
+	background-image:url('../images/icon-48-recruitment_genders.png');
+}
+.ico-48-recruitment_overallranges, .icon-48-recruitment_overallranges {
+	background-image:url('../images/icon-48-recruitment_overallranges.png');
+}
+.ico-48-recruitment_programmes, .icon-48-recruitment_programmes {
+	background-image:url('../images/icon-48-recruitment_programmes.png');
+}
+.ico-48-recruitment_countries, .icon-48-recruitment_countries {
+	background-image:url('../images/icon-48-recruitment_countries.png');
+}
+.ico-48-recruitment_tabs, .icon-48-recruitment_tabs {
+	background-image:url('../images/icon-48-recruitment_tabs.png');
+}
+.ico-48-recruitment_jobstatus, .icon-48-recruitment_jobstatus {
+	background-image:url('../images/icon-48-recruitment_jobstatus.png');
+}
+.ico-48-recruitment_tabsjobs, .icon-48-recruitment_tabsjobs {
+	background-image:url('../images/icon-48-recruitment_tabsjobs.png');
+}
+.ico-48-recruitment_status, .icon-48-recruitment_status {
+	background-image:url('../images/icon-48-recruitment_status.png');
+}
+.ico-48-recruitment_jobs, .icon-48-recruitment_jobs {
+	background-image:url('../images/icon-48-recruitment_jobs.png');
+}
+.ico-48-recruitment_degrees, .icon-48-recruitment_degrees {
+	background-image:url('../images/icon-48-recruitment_degrees.png');
+}
+.ico-48-recruitment_applications, .icon-48-recruitment_applications {
+	background-image:url('../images/icon-48-recruitment_applications.png');
+}
+.ico-48-recruitment_workexperiences, .icon-48-recruitment_workexperiences {
+	background-image:url('../images/icon-48-recruitment_workexperiences.png');
+}
+.ico-48-recruitment_docs, .icon-48-recruitment_docs {
+	background-image:url('../images/icon-48-recruitment_docs.png');
+}
+.ico-48-recruitment_referees, .icon-48-recruitment_referees {
+	background-image:url('../images/icon-48-recruitment_referees.png');
+}
+.ico-48-recruitment_applicationprograms, .icon-48-recruitment_applicationprograms {
+	background-image:url('../images/icon-48-recruitment_applicationprograms.png');
+}
+.ico-48-recruitment_cpanel, .icon-48-recruitment_cpanel {
+	background-image:url('../images/icon-48-recruitment_cpanel.png');
+}
+
+/**
+* Component icons 16px (Sub Menu)
+**/
+.ico-16-recruitment, .icon-16-recruitment {
+	background-image:url('../images/icon-16-recruitment.png');
+}
+.ico-16-recruitment_wheredidus, .icon-16-recruitment_wheredidus {
+	background-image:url('../images/icon-16-recruitment_wheredidus.png');
+}
+.ico-16-recruitment_doctypes, .icon-16-recruitment_doctypes {
+	background-image:url('../images/icon-16-recruitment_doctypes.png');
+}
+.ico-16-recruitment_genders, .icon-16-recruitment_genders {
+	background-image:url('../images/icon-16-recruitment_genders.png');
+}
+.ico-16-recruitment_overallranges, .icon-16-recruitment_overallranges {
+	background-image:url('../images/icon-16-recruitment_overallranges.png');
+}
+.ico-16-recruitment_programmes, .icon-16-recruitment_programmes {
+	background-image:url('../images/icon-16-recruitment_programmes.png');
+}
+.ico-16-recruitment_countries, .icon-16-recruitment_countries {
+	background-image:url('../images/icon-16-recruitment_countries.png');
+}
+.ico-16-recruitment_tabs, .icon-16-recruitment_tabs {
+	background-image:url('../images/icon-16-recruitment_tabs.png');
+}
+.ico-16-recruitment_jobstatus, .icon-16-recruitment_jobstatus {
+	background-image:url('../images/icon-16-recruitment_jobstatus.png');
+}
+.ico-16-recruitment_tabsjobs, .icon-16-recruitment_tabsjobs {
+	background-image:url('../images/icon-16-recruitment_tabsjobs.png');
+}
+.ico-16-recruitment_status, .icon-16-recruitment_status {
+	background-image:url('../images/icon-16-recruitment_status.png');
+}
+.ico-16-recruitment_jobs, .icon-16-recruitment_jobs {
+	background-image:url('../images/icon-16-recruitment_jobs.png');
+}
+.ico-16-recruitment_degrees, .icon-16-recruitment_degrees {
+	background-image:url('../images/icon-16-recruitment_degrees.png');
+}
+.ico-16-recruitment_applications, .icon-16-recruitment_applications {
+	background-image:url('../images/icon-16-recruitment_applications.png');
+}
+.ico-16-recruitment_workexperiences, .icon-16-recruitment_workexperiences {
+	background-image:url('../images/icon-16-recruitment_workexperiences.png');
+}
+.ico-16-recruitment_docs, .icon-16-recruitment_docs {
+	background-image:url('../images/icon-16-recruitment_docs.png');
+}
+.ico-16-recruitment_referees, .icon-16-recruitment_referees {
+	background-image:url('../images/icon-16-recruitment_referees.png');
+}
+.ico-16-recruitment_applicationprograms, .icon-16-recruitment_applicationprograms {
+	background-image:url('../images/icon-16-recruitment_applicationprograms.png');
+}
+.ico-16-recruitment_cpanel, .icon-16-recruitment_cpanel {
+	background-image:url('../images/icon-16-recruitment_cpanel.png');
+}
+
+/**
+* System
+**/
+span.spinner {
+	background-image:url('../images/icon-16-spinner.gif');
+}
+[class^="icon-32"], [class*=" icon-32"] {
+	background-position:0px 0px; !important;
+}
+
+/**
+* Fixes
+**/
+.jgrid span {
+	padding:0px;
+}
+

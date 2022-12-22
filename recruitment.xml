@@ -16,23 +16,10 @@
 	<scriptfile>file.script.php</scriptfile>
 
 	<files folder="site">
-		<folder>_fork</folder>
-		<folder>controllers</folder>
-		<folder>files</folder>
-		<folder>images</folder>
-		<folder>layouts</folder>
-		<folder>models</folder>
-		<folder>views</folder>
 
 		<folder>src</folder>
-		<folder>forms</folder>
-		<folder>helpers</folder>
 		<folder>tmpl</folder>
 
-		<filename>controller.php</filename>
-		<filename>index.html</filename>
-		<filename>recruitment.php</filename>
-		<filename>router.php</filename>
 	</files>
 
 	<media destination="recruitment" folder="media">
@@ -40,10 +27,11 @@
 		<folder>libraries</folder>
 		<folder>css</folder>
 		<folder>js</folder>
+		<filename>joomla.asset.json</filename>
 	</media>
 
 	<administration>
-		
+
 		<menu img="class:address-book">RECRUITMENT_MENU_RECRUITMENT</menu>
 
 		<submenu>
@@ -62,21 +50,12 @@
 
 
 		<files folder="admin">
-			<folder>_fork</folder>
-			<folder>classes</folder>
-			<folder>controllers</folder>
-			<folder>helpers</folder>
-			<folder>images</folder>
-			<folder>layouts</folder>
-			<folder>models</folder>
 			<folder>sql</folder>
-			<folder>tables</folder>
-			<folder>views</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+			<folder>services</folder>
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
-			<filename>controller.php</filename>
-			<filename>index.html</filename>
-			<filename>recruitment.php</filename>
 		</files>
 
 		<languages folder="admin">
